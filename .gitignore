@@ -1,0 +1,9 @@
+node_modules
+# src
+.git
+# package.json
+package-lock.json
+# gulpfile.js
+# smartgrid.js
+# sprite.config.js
+# webpack.config.js

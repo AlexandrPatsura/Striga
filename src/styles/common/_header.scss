@@ -1,0 +1,125 @@
+.header {
+  min-height: 820px;
+}
+
+.navbar-wrapper {
+  background-color: $bg-second;
+  height: 135px;
+}
+
+.navbar {
+  height: 135px;
+  // padding: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .logo {
+//   padding-left: 15px;
+// }
+
+.menu {
+  display: flex;
+  font-size: 0;
+}
+
+.menu__item {
+  margin: 0 11px;
+  position: relative;
+  font-size: 1rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $primary-color;
+    transition: linear .5s;
+  }
+
+  &:hover {
+
+    &::after {
+      width: 60%;
+    }
+  }
+}
+
+.menu__link {
+  display: block;
+  color: $primary-color;
+  text-transform: uppercase;
+
+}
+
+.header-bg {
+  position: relative;
+  min-height: 685px;
+
+  background: url('../images/header-team.png') no-repeat 75% bottom,
+              url('../images/header-bg.jpg') no-repeat center center;
+  background-size: auto, cover;
+}
+
+.header-text {
+  width: 480px;
+  padding: 70px 0 0;
+  color: #fff;
+
+  h2 {
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+
+    span {
+      display: block;
+      font-size: 1.875rem;
+      font-weight: bold;
+      line-height: 2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+
+    span {
+      font-size: 1.9rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.text-thin {
+  font-family: $second-font;
+  font-weight: 300;
+}
+
+.button {
+  display: block;
+  font-size: 1.125rem;
+
+  background-color: #fff;
+  border: none;
+  margin: 15px 0 20px;
+  padding: 24px 20px;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: linear 1s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

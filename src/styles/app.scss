@@ -1,0 +1,84 @@
+@import "normalize";
+@import "common/variables";
+@import "common/header";
+@import "common/secret";
+@import "common/schedule";
+@import "common/school";
+// @import "common/fonts";
+// @import "common/smartgrid";
+// @import "common/preloader";
+// @import 'common/header';
+
+// @include reset;
+
+html,
+body {
+  font-size: $main-fz;
+  font-family: $main-font;
+  color: $primary-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// .debug {
+  // @include debug(#ccc, none);
+// }
+
+.container {
+  // @include wrapper;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// .row {
+//   @include row-flex;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-size: 0rem;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li,
+a,
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  // color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 100px 0;
+}

@@ -1,0 +1,46 @@
+.school {
+  background-color: $bg-second;
+
+  &__description {
+    display: flex;
+    padding: 0 15px 45px;
+  }
+}
+
+.description-block {
+  // display: flex;
+  flex-basis: 25%;
+  padding-top: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  height: 280px;
+  
+  &:nth-child(odd) {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  &:nth-child(even) {
+    background-color: #191919;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding-top: 35px;
+    line-height: 1.8rem;
+  }
+}
+
+.description-text {
+  flex-basis: 25%;
+  padding-top: 20px;
+  // padding-left: 50px;
+  padding-right: 35px;
+
+  p {
+    // font-weight: bold;
+    font-size: 1.125rem;
+  }
+}
