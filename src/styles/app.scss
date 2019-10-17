@@ -5,6 +5,7 @@
 @import "common/schedule";
 @import "common/school";
 @import "common/teachers";
+@import "common/learning";
 // @import "common/fonts";
 // @import "common/smartgrid";
 // @import "common/preloader";
@@ -34,6 +35,11 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__fluid {
+  width: 100%;
   padding: 0 15px;
 }
 
