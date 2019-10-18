@@ -3,7 +3,8 @@
   padding-bottom: 0;
 
   .container__fluid {
-    background-color: $bg-purple;
+    // background-color: $purple;
+    background: linear-gradient(to right, rgba(145,2,238,1) 50%, rgba(25,25,25,1) 50%);
   }
 }
 
@@ -29,6 +30,7 @@
   flex-basis: 33.33%;
   padding: 30px 30px 0;
   height: 370px;
+  background-color: #191919;
 
   img {
     width: 70px;
@@ -41,6 +43,10 @@
     line-height: 1.4rem;
     height: 180px;
     overflow: hidden;
+  }
+
+  &:nth-child(3n+1) {
+    background-color: $purple;
   }
 }
 
