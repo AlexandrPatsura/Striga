@@ -47,6 +47,23 @@
       width: 60%;
     }
   }
+
+  &:last-child {
+
+    &::before {
+      content: "";
+    }
+  }
+
+  &::before {
+    content: "x";
+    position: absolute;
+    margin-top: -6px;
+    right: -10px;
+    transform: translate(50%, 50%);
+    font-size: 12px;
+    color: #ccc;
+  }
 }
 
 .menu__link {

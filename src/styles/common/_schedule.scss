@@ -5,39 +5,54 @@
   color: $secondary-color;
 }
 
-.schedule-title {
-  font-size: 30px;
-  padding-bottom: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .schedule__group-title {
   font-size: 30px;
   padding: 30px 0;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   font-weight: normal;
   text-align: center;
-  background: linear-gradient(90deg, rgba(179,53,225,1) 0%, rgba(145,1,238,1) 100%);
+  background: linear-gradient(90deg, rgba(179, 53, 225, 1) 0%, rgba(145, 1, 238, 1) 100%);
 }
 
 .schedule__group {
   display: flex;
+
+  h2 {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 .schedule__group-left,
 .schedule__group-right {
   flex-basis: 50%;
-  // border: 1px solid $secondary-color;
-  padding: 0 50px;
+}
+
+.schedule__group-left {
+  flex-basis: 50%;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.schedule__group-right {
+  flex-basis: 50%;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.schedule-title {
+  font-size: 30px;
+  padding: 40px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .schedule-text {
   display: flex;
   flex-direction: column;
   height: 270px;
-  padding: 57px 0 68px;
+  padding: 57px 50px 68px;
 
   p {
     font-size: 1.125rem;
