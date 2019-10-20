@@ -1,6 +1,65 @@
-.teachers-title {
-  text-align: center;
-  font-size: 30px;
-  font-weight: normal;
+.teachers {
+  padding-bottom: 0;
+}
+
+.teacher__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 35px;
+
+  img {
+    width: 271px;
+    height: 271px;
+    border-radius: 50%;
+  }
+}
+
+.teacher__leader {
+  display: flex;
+
+  img {
+    margin-right: 50px;
+  }
+}
+
+.teacher__name {
+  font-size: 24px;
+  font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.teacher__description {
+  width: 270px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.54);
+  padding-bottom: 35px;
+}
+
+.teacher__experience {
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.teacher__awards {
+  line-height: 1.6rem;
+}
+
+.teacher__team {
+  flex-basis: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .teacher__name {
+    text-align: center;
+  }
+
+  .teacher__description {
+    padding-left: 10px;
+  }
 }
