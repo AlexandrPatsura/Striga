@@ -1,24 +1,9 @@
-//- .debug
-//-   div
-//-     div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
-//-       div
 header.header#header
   .navbar-wrapper
     .container
       .navbar
         a(href='#').logo
-          img.logo-img(src="./assets/images/logo.jpg", alt="")
+          img.logo-img(src="./assets/images/logo.png", alt="")
         ul.menu
           li.menu__item
             a.menu__link(href="#") о нас
@@ -35,13 +20,17 @@ header.header#header
           li.menu__item
             a.menu__link(href="#") вакансии
     .header-bg
+      .header__description
+        p 
+          strong STRIGA™ School 
+          span Школа парикмахерского искусств
       .container
         .header-text
           h2 Хотите научиться 
           p 
-            span не просто стричь и красить, 
+            span не просто стричь и красить, <br>
             strong а творить магию, <br>
-            | менять людей вокруг и 
+            | менять людей вокруг и <br>
             | открывать их истинную красоту?
         .header-text
           h2.text-thin Записывайтесь в 
@@ -50,7 +39,5 @@ header.header#header
               | мастеров striga 
           button.button хочу учиться в striga
           p.price от 13 250 ₽.
-
-
-
+      .header__team-bg
 

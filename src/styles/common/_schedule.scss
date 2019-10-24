@@ -1,8 +1,24 @@
 .schedule {
+  position: relative;
   background: url("./../images/schedule-bg.jpg") #191919 no-repeat center center;
   background-size: cover;
   min-height: 710px;
   color: $secondary-color;
+}
+
+.schedule__mask {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color:  rgba(0, 0, 0, .9);
+}
+
+.schedule__course {
+  position: relative;
+  margin-top: -25px;
+  z-index: 5;
 }
 
 .schedule__group-title {
@@ -25,6 +41,7 @@
 .schedule__group-left,
 .schedule__group-right {
   flex-basis: 50%;
+  padding-top: 35px;
 }
 
 .schedule__group-left {
@@ -40,23 +57,23 @@
   border-bottom: 1px solid #fff;
 }
 
-.schedule-title {
-  font-size: 30px;
-  padding: 40px 0;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-}
+// .schedule-title {
+//   font-size: 30px;
+//   padding: 40px 0;
+//   font-weight: normal;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
 
 .schedule-text {
   display: flex;
   flex-direction: column;
   height: 270px;
-  padding: 57px 50px 68px;
+  padding: 55px 50px 70px;
 
-  p {
-    font-size: 1.125rem;
-  }
+  // p {
+  //   font-size: 1.125rem;
+  // }
 
   .timetable {
     margin-top: auto;

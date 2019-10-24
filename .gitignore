@@ -4,6 +4,6 @@ src
 # package.json
 package-lock.json
 # gulpfile.js
-# smartgrid.js
+smartgrid.js
 # sprite.config.js
 # webpack.config.js

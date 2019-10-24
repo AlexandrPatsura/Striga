@@ -1,24 +1,23 @@
 .header {
   min-height: 820px;
+  background-color: $bg-second;
 }
 
-.navbar-wrapper {
-  background-color: $bg-second;
-  height: 135px;
-}
+// .navbar-wrapper {
+//   background-color: $bg-second;
+// }
 
 .navbar {
-  height: 135px;
-  // padding: 0 15px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 134px;
 }
 
-// .logo {
-//   padding-left: 15px;
-// }
+.logo-img {
+  width: auto;
+  height: 24px;
+}
 
 .menu {
   display: flex;
@@ -26,9 +25,8 @@
 }
 
 .menu__item {
-  margin: 0 11px;
+  margin: 0 12px;
   position: relative;
-  font-size: 1rem;
 
   &::after {
     content: "";
@@ -38,18 +36,16 @@
     width: 0;
     height: 2px;
     background-color: $primary-color;
-    transition: linear .5s;
+    transition: linear 0.5s;
   }
 
   &:hover {
-
     &::after {
       width: 60%;
     }
   }
 
   &:last-child {
-
     &::before {
       content: "";
     }
@@ -58,63 +54,103 @@
   &::before {
     content: "x";
     position: absolute;
-    margin-top: -6px;
-    right: -10px;
+    margin-top: -3px;
+    right: -12px;
     transform: translate(50%, 50%);
-    font-size: 12px;
-    color: #ccc;
+    font-size: 0.55rem;
+    color: #bababa;
   }
 }
 
 .menu__link {
   display: block;
+  font-size: 0.88rem;
   color: $primary-color;
   text-transform: uppercase;
-
+  font-weight: 100;
 }
 
 .header-bg {
   position: relative;
-  min-height: 685px;
+  min-height: 686px;
+  background: url("./../images/header-bg.jpg") no-repeat center center;
+  background-size: cover;
 
-  background: url('./../images/header-team.png') no-repeat 75% bottom,
-              url('./../images/header-bg.jpg') no-repeat center center;
-  background-size: auto, cover;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(90deg, #b335e1 0%, #9101ee 100%);
+    opacity: .8;
+  }
+}
+
+.header__team-bg {
+  position: absolute;
+  width: 100%;
+  min-height: 686px;
+  bottom: 0;
+  background: url("./../images/header-team.png") no-repeat 75% bottom;
+  background-size: auto;
+  z-index: 5;
+}
+
+.header__description {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 0;
+  color: #fff;
+  white-space: nowrap;
+  bottom: 20%;
+  text-align: center;
+  left: 67px;
+  z-index: 5;
+
+  span {
+    font-family: $second-font;
+    font-weight: 100;
+  }
 }
 
 .header-text {
-  width: 480px;
+  position: relative;
+  width: 470px;
   padding: 70px 0 0;
   color: #fff;
+  z-index: 10;
 
   h2 {
-    font-size: 2.75rem;
+    font-size: 2.22rem;
     text-transform: uppercase;
     padding-bottom: 1rem;
 
     span {
       display: block;
-      font-size: 1.875rem;
-      font-weight: bold;
+      font-size: 1.7rem;
+      font-family: $main-font;
+      font-weight: 800;
       line-height: 2rem;
       padding-top: 1rem;
     }
   }
 
+  .text-thin {
+    font-size: 2.5rem;
+    font-family: $second-font;
+    font-weight: 300;
+  }
+
   p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 2rem;
 
     span {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       text-transform: uppercase;
     }
   }
-}
-
-.text-thin {
-  font-family: $second-font;
-  font-weight: 300;
 }
 
 .button {
@@ -130,7 +166,7 @@
 
   cursor: pointer;
 
-  transition: linear 1s;
+  transition: linear .3s;
 
   &:focus {
     outline: none;

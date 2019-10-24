@@ -1,10 +1,24 @@
 .school {
   background-color: $bg-second;
-  padding-bottom: 0;
+  padding-top: 130px;
 
   &__description {
+    position: relative;
     display: flex;
     padding: 0 15px 45px;
+    z-index: 5;
+  }
+
+  &::before {
+    content: "Striga School";
+    position: absolute;
+    top: 20px;
+    font-size: 8.38rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
   }
 }
 
@@ -14,7 +28,8 @@
   padding-top: 45px;
   padding-left: 50px;
   padding-right: 50px;
-
+  background-color: $bg-second;
+  
   height: 280px;
   
   &:nth-child(odd) {
