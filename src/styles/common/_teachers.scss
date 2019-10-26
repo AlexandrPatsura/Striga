@@ -20,20 +20,55 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 35px;
-
-  img {
+  
+  .team-round {
+    position: relative;
     width: 271px;
     height: 271px;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 271px;
+      height: 271px;
+      border: 3px solid rgba(145,2,238,.3);
+      border-radius: 50%;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: 19px;
+
+      width: 231px;
+      height: 231px;
+      border: 14px solid rgba(145,2,238,.3);
+      border-radius: 50%;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 
 .teacher__leader {
   display: flex;
 
-  img {
+  .team-round {
     margin-right: 50px;
+  }
+
+  img {
     margin-bottom: 0;
   }
 }
