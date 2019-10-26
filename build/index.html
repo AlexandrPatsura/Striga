@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/styles/app.min.css">
     <title>Striga</title>
   </head>
@@ -261,13 +263,16 @@
       </section>
       <section class="awards">
         <div class="container">
-          <h2 class="title">наши награды</h2><img src="./assets/images/awards.jpg" alt="">
+          <h2 class="title">наши награды</h2>
+          <div class="awards__block"><img class="award__img" src="./assets/images/awards/award-1.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-2.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-3.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-4.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-5.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-6.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-7.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-8.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-9.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-10.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-11.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-12.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-13.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-14.jpg" alt=""><img class="award__img" src="./assets/images/awards/award-15.jpg" alt=""></div>
         </div>
       </section>
       <section class="charity">
         <div class="container">
           <h2 class="title">Благотворительность</h2>
-          <div class="charity-inner"><img class="charity-img" src="./assets/images/charity.jpg" alt="">
+          <div class="charity-inner">
+            <video class="charity__video" width="540" height="344" controls="controls" poster="./assets/images/charity.jpg">
+              <source src="./assets/video/video-1.mp4" type="video/mp4">Your browser doesn't support HTML5 video tag.</video>
             <div class="charity-text">
               <p>
                 На территории школы регулярно<br>проходит <strong>акция<br></strong><strong>"ПодSTRIGAй </strong>— <strong>детям помогай".</strong></p>
@@ -304,7 +309,9 @@
                 и другие вопросы от основателя
                 компании Алексея Стрига
               </p>
-            </div><img src="./assets/images/interview.jpg" alt="">
+            </div>
+            <video class="interview__video" width="611" height="548" controls="controls" poster="./assets/images/interview.jpg">
+              <source src="./assets/video/video-1.mp4" type="video/mp4">Your browser doesn't support HTML5 video tag.</video>
           </div>
         </div>
       </section>
@@ -330,6 +337,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="assets/scripts/bundle.js"></script>
   </body>
 </html>

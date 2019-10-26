@@ -1,6 +1,18 @@
 .learning {
+  padding-top: 70px;
   background-color: $bg-second;
-  padding-bottom: 0;
+
+  &::before {
+    content: "Программа";
+    position: absolute;
+    top: 90px;
+    font-size: 8.38rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
 
   .container__fluid {
     // background-color: $purple;
@@ -9,8 +21,10 @@
 }
 
 .subtitle {
+  position: relative;
   font-size: 18px;
-  padding-bottom: 65px;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .learning__group {
@@ -21,7 +35,7 @@
 .learning__block {
   flex-basis: 33.33%;
   padding: 30px 30px 0;
-  height: 370px;
+  height: 410px;
   background-color: #191919;
 
   img {

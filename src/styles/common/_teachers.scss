@@ -1,5 +1,18 @@
 .teachers {
   padding-bottom: 0;
+
+  &::before {
+    content: "Преподователи";
+    position: absolute;
+    top: 120px;
+    font-size: 8.38rem;
+    width: 100%;
+    text-align: center;
+    color: $bg-second;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: -1;
+  }
 }
 
 .teacher__row {

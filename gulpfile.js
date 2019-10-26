@@ -26,11 +26,16 @@ global.$ = {
       src: 'src/images/**/*.{jpg,jpeg,png}',
       dest: 'build/assets/images/'
     },
+    video: {
+      src: 'src/video/**/*.*',
+      dest: 'build/assets/video/'
+    },
     sprites: {
       src: 'src/images/sprites/*.svg',
       dest: 'build/assets/images/sprites/'
     },
     scripts: {
+      libs: 'src/scripts/libs/slick.min.js',
       src: 'src/scripts/app.js',
       dest: 'build/assets/scripts/'
     }
@@ -42,11 +47,11 @@ $.paths.tasks.forEach(function (taskPath) {
 });
 
 $.gulp.task('default', $.gulp.series(
-  $.gulp.parallel('templates', 'fonts', 'styles', 'images', 'sprites', 'scripts'),
+  $.gulp.parallel('templates', 'fonts', 'styles', 'images', 'video', 'sprites', 'scripts'),
   $.gulp.parallel('watch', 'server')
 ));
 
 $.gulp.task('build', $.gulp.series(
   'clean',
-  $.gulp.parallel('templates', 'fonts', 'styles', 'images', 'sprites', 'scripts')
+  $.gulp.parallel('templates', 'fonts', 'styles', 'images', 'video', 'sprites', 'scripts')
 ));
